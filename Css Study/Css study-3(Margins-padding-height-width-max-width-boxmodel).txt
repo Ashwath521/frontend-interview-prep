@@ -1,0 +1,203 @@
+CSS Margins
+Margins are used to create space around elements, outside of any defined borders.
+
+Margin - Individual Sides
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Margin - Shorthand Property
+To shorten the code, it is possible to specify all the margin properties in one property.
+
+The margin property is a shorthand property for the following individual margin properties:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+So, here is how it works:
+
+If the margin property has four values:
+
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+
+If the margin property has three values:
+
+margin: 25px 50px 75px;
+top margin is 25px
+right and left margins are 50px
+bottom margin is 75px
+
+If the margin property has two values:
+
+margin: 25px 50px;
+top and bottom margins are 25px
+right and left margins are 50px
+
+
+If the margin property has one value:
+
+margin: 25px;
+all four margins are 25px
+
+
+The auto Value
+You can set the margin property to auto to horizontally center the element within its container.
+CSS Margin Collapse
+Sometimes two margins collapse into a single margin.
+
+Margin Collapse
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+This does not happen on left and right margins! Only top and bottom margins!
+
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+
+CSS Padding
+Padding is used to create space around an element's content, inside of any defined borders.
+
+Padding - Individual Sides
+CSS has properties for specifying the padding for each side of an element:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+All the padding properties can have the following values:
+
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+inherit - specifies that the padding should be inherited from the parent element
+Note: Negative values are not allowed.
+
+If the padding property has four values:
+
+padding: 25px 50px 75px 100px;
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
+
+If the padding property has three values:
+
+padding: 25px 50px 75px;
+top padding is 25px
+right and left paddings are 50px
+bottom padding is 75px
+
+If the padding property has two values:
+
+padding: 25px 50px;
+top and bottom paddings are 25px
+right and left paddings are 50px
+
+If the padding property has one value:
+
+padding: 25px;
+all four paddings are 25px
+
+
+
+Padding and Element Width
+The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, 
+border, and margin of an element (the box model).
+
+So, if an element has a specified width, the padding added to that element will be added to the total width of the element. 
+This is often an undesirable result.
+
+Example
+Here, the <div> element is given a width of 300px. However, the actual width of the <div> element
+ will be 350px (300px + 25px of left padding + 25px of right padding):
+
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+
+CSS Height, Width and Max-width
+Diffrence between width and max-width
+The width property sets a fixed width for an element, while the max-width property sets a maximum width limit that the element can reach, 
+allowing it to shrink or expand within that limit based on its content.
+
+The CSS height and width properties are used to set the height and width of an element.
+The CSS max-width property is used to set the maximum width of an element.
+
+
+
+CSS Setting height and width
+The height and width properties are used to set the height and width of an element.
+The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+
+CSS height and width Values
+The height and width properties may have the following values:
+
+auto - This is default. The browser calculates the height and width
+length - Defines the height/width in px, cm, etc.
+% - Defines the height/width in percent of the containing block
+initial - Sets the height/width to its default values
+inherit - The height/width will be inherited from its parent value
+
+
+Setting max-width
+The max-width property is used to set the maximum width of an element.
+The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, 
+or set to none (this is default. Means that there is no maximum width).
+The problem with the <div> above occurs when the browser window is smaller than the width of the element (500px).
+The browser then adds a horizontal scrollbar to the page.
+Using max-width instead, in this situation, will improve the browser's handling of small windows.
+Tip: Drag the browser window to smaller than 500px wide, to see the difference between the two divs!
+
+
+
+CSS Box Model
+
+In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. 
+It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+
+
+Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements. 
+
+
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+
+
+The total width of an element should be calculated like this:
+
+Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
+The total height of an element should be calculated like this:
+
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
