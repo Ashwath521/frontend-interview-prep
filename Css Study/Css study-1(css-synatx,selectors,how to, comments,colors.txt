@@ -1,0 +1,228 @@
+What is CSS?
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+
+CSS Syntax
+A CSS rule consists of a selector and a declaration block.
+The selector points to the HTML element you want to style.
+The declaration block contains one or more declarations separated by semicolons.
+Each declaration includes a CSS property name and a value, separated by a colon.
+Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+
+
+CSS Selectors
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+
+
+Most basic CSS selectors.
+The CSS element Selector
+The CSS id Selector
+The CSS class Selector
+The CSS Universal Selector
+
+
+The CSS element Selector
+The element selector selects HTML elements based on the element name.
+
+The CSS id Selector
+The id selector uses the id attribute of an HTML element to select a specific element.
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+To select an element with a specific id, write a hash (#) character, followed by the id of the element
+
+The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+<h1 class="make large" id="he" style="color: rgb(18, 38, 218);">Welcome to hello world</h1>
+
+#he {
+  color: brown;
+}
+
+/* class selector */
+
+.make {
+  color: yellow;
+}
+
+.large {
+  color: gray;
+}
+
+prefrence inline style is taking is first
+second prefrence Id's
+third prefrence class 
+If you want override the prefrence set !important
+Ex:-
+.make {
+  color: yellow !important;
+}
+having two class in same element which style it's taking 
+
+<h1 class="make large">Welcome to hello world</h1>
+
+.make {
+  color: yellow;
+}
+
+.large {
+  color: gray;
+}
+
+it will take second class style
+
+The CSS Universal Selector
+The universal selector (*) selects all HTML elements on the page.
+
+ <h1>Welcome to hello world</h1>
+    <h2 class="make">steve</h2>
+
+* {
+  color: yellow;
+}
+
+.make {
+  color: blue;
+}
+ which doesn't have anything in that time take universal style
+other wise it takes particualr id or class style
+
+The CSS Grouping Selector
+The grouping selector selects all the HTML elements with the same style definitions.
+
+It will be better to group the selectors, to minimize the code.
+To group selectors, separate each selector with a comma.
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+Grouping Selector
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+
+
+How To Add CSS
+
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+
+External CSS
+Internal CSS
+Inline CSS
+
+External CSS
+With an external style sheet, you can change the look of an entire website by changing just one file!
+An external style sheet can be written in any text editor, and must be saved with a .css extension.
+
+The external .css file should not contain any HTML tags.
+
+Note: Do not add a space between the property value (20) and the unit (px):
+Incorrect (space): margin-left: 20 px;
+Correct (no space): margin-left: 20px;
+
+
+Internal CSS
+An internal style sheet may be used if one single HTML page has a unique style.
+The internal style is defined inside the <style> element, inside the head section.
+
+Inline CSS
+An inline style may be used to apply a unique style for a single element.
+
+Multiple Style Sheets
+If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+
+h1 {
+  color: navy;
+}
+
+h1 {
+  color: orange;   
+}
+
+Example
+If the internal style is defined after the link to the external style sheet, the <h1> elements will be "orange":
+
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+h1 {
+  color: orange;
+}
+</style>
+</head>
+
+Example
+However, if the internal style is defined before the link to the external style sheet, the <h1> elements will be "navy": 
+
+<head>
+<style>
+h1 {
+  color: orange;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+Cascading Order
+What style will be used when there is more than one style specified for an HTML element?
+
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+
+Inline style (inside an HTML element)
+External and internal style sheets (in the head section)
+Browser default
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+
+
+CSS Comments
+CSS comments are not displayed in the browser, but they can help document your source code.
+
+CSS Comments
+Comments are used to explain the code, and may help when you edit the source code at a later date.
+Comments are ignored by browsers
+
+
+CSS Colors
+
+Colors are specified using predefined color names, or RGB, HEX, values.
+CSS Color Names ex:- "Tomato" "yellow" 
+CSS RGB Colors
+
+RGB Value
+In CSS, a color can be specified as an RGB value, using this formula:
+rgb(red, green, blue)
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+
+
+HEX Value
+In CSS, a color can be specified using a hexadecimal value in the form:
+
+#rrggbb #0000ff #3cb371
+
+Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+always it should be 6 charcter along with # symbol number range should be 0-9 alphabet should be a-f 
+example :#ff0000 
+
+For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).
+To display black, set all values to 00, like this: #000000.
