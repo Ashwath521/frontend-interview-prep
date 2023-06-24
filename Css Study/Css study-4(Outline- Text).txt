@@ -1,0 +1,185 @@
+CSS Outline
+An outline is a line drawn outside the element's border.
+CSS Outline
+An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+CSS has the following outline properties:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+
+
+CSS Outline Style
+The outline-style property specifies the style of the outline, and can have one of the following values:
+
+dotted - Defines a dotted outline
+dashed - Defines a dashed outline
+solid - Defines a solid outline
+double - Defines a double outline
+groove - Defines a 3D grooved outline
+ridge - Defines a 3D ridged outline
+inset - Defines a 3D inset outline
+outset - Defines a 3D outset outline
+none - Defines no outline
+hidden - Defines a hidden outline
+
+
+
+CSS Outline Width
+
+CSS Outline Width
+The outline-width property specifies the width of the outline, and can have one of the following values:
+
+thin (typically 1px)
+medium (typically 3px)
+thick (typically 5px)
+A specific size (in px, pt, cm, em, etc)
+
+
+
+CSS Outline Color
+The outline-color property is used to set the color of the outline.
+
+CSS Outline Shorthand
+outline:5px solid yellow
+
+CSS Outline Offset
+The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
+
+The following example specifies an outline 15px outside the border edge:
+
+
+All CSS Outline Properties
+Property	Description
+outline	A shorthand property for setting outline-width, outline-style, and outline-color in one declaration
+outline-color	Sets the color of an outline
+outline-offset	Specifies the space between an outline and the edge or border of an element
+outline-style	Sets the style of an outline
+outline-width	Sets the width of an outline
+
+
+CSS Text
+Text Color
+The color property is used to set the color of the text
+
+CSS Text Alignment
+
+
+Text Alignment and Text Direction
+In this chapter you will learn about the following properties:
+
+text-align
+text-align-last
+direction
+unicode-bidi
+vertical-align
+
+Text Alignment
+The text-align property is used to set the horizontal alignment of a text.
+A text can be left or right aligned, centered, or justified.
+When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers):
+CSS Syntax
+text-align: left|right|center|justify|initial|inherit;
+
+
+Text Align Last
+The text-align-last property specifies how to align the last line of a text.
+text-align-last: left|right|center
+
+Text Direction
+The direction and unicode-bidi properties can be used to change the text direction of an element:
+
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+
+Vertical Alignment
+The vertical-align property sets the vertical alignment of an element.
+
+
+CSS Text Decoration
+Text Decoration
+In this chapter you will learn about the following properties:
+
+text-decoration-line
+text-decoration-color
+text-decoration-style
+text-decoration-thickness
+text-decoration
+
+CSS Syntax
+text-decoration-line:overline|line-through|underline|underline overline
+text-decoration: text-decoration-line text-decoration-color text-decoration-style text-decoration-thickness|initial|inherit;
+
+Specify a Color for the Decoration Line
+The text-decoration-color property is used to set the color of the decoration line.
+
+Specify a Style for the Decoration Line
+The text-decoration-style property is used to set the style of the decoration line.
+CSS Syntax
+text-decoration-style:solid|dotted
+
+Specify the Thickness for the Decoration Line
+The text-decoration-thickness property is used to set the thickness of the decoration line
+
+A Small Tip
+All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. 
+The text-decoration: none; is used to remove the underline from links, like this:
+
+Example
+a {
+  text-decoration: none;
+}
+
+
+CSS Text Transformation
+Text Transformation
+The text-transform property is used to specify uppercase and lowercase letters in a text.
+
+It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:
+
+CSS Syntax
+text-transform: none|capitalize|uppercase|lowercase|initial|inherit;
+
+
+CSS Text Spacing
+
+Text Spacing
+In this chapter you will learn about the following properties:
+
+text-indent
+letter-spacing
+line-height
+word-spacing
+white-space
+
+Text Indentation
+The text-indent property is used to specify the indentation of the first line of a text:
+
+Letter Spacing
+The letter-spacing property is used to specify the space between the characters in a text.
+
+Line Height
+The line-height property is used to specify the space between lines:
+
+Word Spacing
+The word-spacing property is used to specify the space between the words in a text.
+
+White Space
+The white-space property specifies how white-space inside an element is handled.
+
+
+CSS Text Shadow
+Text Shadow
+The text-shadow property adds shadow to text.
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):blur effect (5px) to the shadow:color (red) to the shadow:
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+
