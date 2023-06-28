@@ -1,0 +1,182 @@
+                     CSS font-family 
+We use the font-family property to specify the font of a text.
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+CSS Web Safe Fonts
+
+What are Web Safe Fonts?
+Web safe fonts are fonts that are universally installed across all browsers and devices.
+
+Fallback Fonts
+However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly.
+
+Therefore, it is very important to always use fallback fonts.
+
+This means that you should add a list of similar "backup fonts" in the font-family property.
+ If the first font does not work, the browser will try the next one, and the next one, and so on.
+ Always end the list with a generic font family name.
+
+Best Web Safe Fonts for HTML and CSS
+The following list are the best web safe fonts for HTML and CSS:
+
+Arial (sans-serif)
+Verdana (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+
+
+CSS Font Fallbacks
+
+Commonly Used Font Fallbacks
+Below are some commonly used font fallbacks, organized by the 5 generic font families:
+
+Serif
+Sans-serif
+Monospace
+Cursive
+Fantasy
+
+
+CSS Font Style
+Font Style
+The font-style property is mostly used to specify italic text.
+
+This property has three values:
+
+normal - The text is shown normally
+italic - The text is shown in italics
+oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+
+Font Weight
+The font-weight property specifies the weight of a font:
+
+Font Variant
+The font-variant property specifies whether or not a text should be displayed in a small-caps font.
+
+CSS Font Size
+Font Size
+The font-size property sets the size of the text
+
+Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+
+Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.
+
+The font-size value can be an absolute, or relative size.
+
+Absolute size:
+
+Sets the text to a specified size
+Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
+Absolute size is useful when the physical size of the output is known
+Relative size:
+
+Sets the size relative to surrounding elements
+Allows a user to change the text size in browsers
+
+Set Font Size With Em
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+
+The size can be calculated from pixels to em using this formula: pixels/16=em
+
+Note:- 🚨
+Responsive Font Size
+The text size can be set with a vw unit, which means the "viewport width".
+Resize the browser window to see how the font size scales.
+
+<h1 style="font-size:10vw">Hello World</h1>
+Viewport is the browser window size. 1vw = 1% of viewport width
+
+CSS Google Fonts
+
+Google Fonts
+If you do not want to use any of the standard fonts in HTML, you can use Google Fonts.
+
+Google Fonts are free to use, and have more than 1000 fonts to choose from.
+
+How To Use Google Fonts
+Just add a special style sheet link in the <head> section and then refer to the font in the CSS.
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+All CSS Font Properties
+Property	Description
+font	Sets all the font properties in one declaration
+font-family	Specifies the font family for text
+font-size	Specifies the font size of text
+font-style	Specifies the font style for text
+font-variant	Specifies whether or not a text should be displayed in a small-caps font
+font-weight	Specifies the weight of a font
+
+
+
+CSS Icons
+
+
+How To Add Icons
+The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+
+Add the name of the specified icon class to any inline HTML element (like <i> or <span>).
+
+Font Awesome Icons
+To use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the <head> section of your HTML page:
+
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+
+</body>
+</html>
+
+Bootstrap Icons
+To use the Bootstrap glyphicons, add the following line inside the <head> section of your HTML page:
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+Google Icons
+To use the Google icons, add the following line inside the <head> section of your HTML page:
+<i class="glyphicon glyphicon-cloud"></i>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<i class="material-icons">cloud</i>
+
+
+CSS Links
+The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+When setting the style for several link states, there are some order rules:
+
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover
+
+Text Decoration
+The text-decoration property is mostly used to remove underlines from links:
+
+Background Color
+The background-color property can be used to specify a background color for links:
