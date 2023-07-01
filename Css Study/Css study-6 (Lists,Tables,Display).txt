@@ -1,0 +1,163 @@
+CSS Lists
+HTML Lists and CSS List Properties
+In HTML, there are two main types of lists:
+
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters
+The CSS list properties allow you to:
+
+Set different list item markers for ordered lists
+Set different list item markers for unordered lists
+Set an image as the list item marker
+Add background colors to lists and list items
+
+Different List Item Markers
+The list-style-type property specifies the type of list item marker.
+
+synatx
+list-style-type:none|upper-roman|circle|square
+
+An Image as The List Item Marker
+The list-style-image property specifies an image as the list item marker:
+
+
+Position The List Item Markers
+
+The list-style-position property specifies the position of the list-item markers (bullet points).
+
+"list-style-position: outside;" means that the bullet points will be outside the list item. 
+The start of each line of a list item will be aligned vertically. This is default:
+
+
+"list-style-position: inside;" means that the bullet points will be inside the list item.
+ As it is part of the list item, it will be part of the text and push the text at the start:
+
+Remove Default Settings
+The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. 
+To remove this, add margin:0 and padding:0 to <ul> or <ol>:
+
+
+ol li {
+  margin-left: 2rem;
+  list-style-position: outside;
+  background-color: Tomato;
+  color: white;
+  width: 400px;
+  height: 2rem;
+  border: 2px solid gray;
+  margin-top: 1rem;
+}
+
+
+All CSS List Properties
+Property	Description
+list-style	Sets all the properties for a list in one declaration
+list-style-image	Specifies an image as the list-item marker
+list-style-position	Specifies the position of the list-item markers (bullet points)
+list-style-type	Specifies the type of list-item marker
+
+
+
+CSS Tables
+
+Table Borders
+To specify table borders in CSS, use the border property.
+
+The example below specifies a solid border for <table>, <th>, and <td> elements:
+
+Collapse Table Borders
+The border-collapse property sets whether the table borders should be collapsed into a single border:
+
+table {
+  border-collapse: collapse;
+}
+
+CSS Table Size
+
+Table Width and Height
+The width and height of a table are defined by the width and height properties.
+
+The example below sets the width of the table to 100%, and the height of the <th> elements to 70px:
+
+CSS Table Alignment
+
+Horizontal Alignment
+The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+
+By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+
+To center-align the content of  <td> elements as well, use text-align: center:
+
+Vertical Alignment
+The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>.
+
+By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements)
+
+
+CSS Table Style
+Table Padding
+To control the space between the border and the content in a table, use the padding property on <td> and <th> elements:
+
+
+CSS Responsive Table
+Add a container element (like <div>) with overflow-x:auto around the <table> element to make it responsive:
+<div style="overflow-x:auto;">
+
+<table>
+... table content ...
+</table>
+
+</div>
+
+
+Note:- 🚨
+CSS Layout - The display Property
+The display property is the most important CSS property for controlling layout
+
+The display Property
+The display property specifies if/how an element is displayed.
+
+Every HTML element has a default display value depending on what type of element it is. 
+The default display value for most elements is block or inline.
+
+Block-level Elements
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+
+The <div> element is a block-level element.
+Examples of block-level elements:
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+
+
+Inline Elements
+An inline element does not start on a new line and only takes up as much width as necessary.
+
+This is an inline <span> element inside a paragraph.
+
+Examples of inline elements:
+
+<span>
+<a>
+<img>
+
+Display: none;
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+
+The <script> element uses display: none; as default. 
+
+Note: Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is.
+ So, an inline element with display: block; is not allowed to have other block elements inside it.
+
+
+Hide an Element - display:none or visibility:hidden
+
+CSS Display/Visibility Properties
+Property	Description
+display	Specifies how an element should be displayed
+visibility	Specifies whether or not an element should be visible
