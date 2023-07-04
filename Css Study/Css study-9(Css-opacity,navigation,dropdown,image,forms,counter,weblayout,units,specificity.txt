@@ -1,0 +1,238 @@
+Note:- 🚨
+If you want to align the element horizontally particaular element should set display is block.
+
+CSS Opacity / Transparency
+The opacity property specifies the opacity/transparency of an element.
+
+The opacity property can take a value from 0.0 - 1.0. The lower the value, the more transparent:
+img {
+  opacity: 0.5;
+}
+
+Transparent Hover Effect
+The opacity property is often used together with the :hover
+
+CSS Navigation Bar
+
+Navigation Bars
+Having easy-to-use navigation is important for any web site.
+
+With CSS you can transform boring HTML menus into good-looking navigation bars.
+
+Example explained:
+
+list-style-type: none; - Removes the bullets. A navigation bar does not need list markers
+Set margin: 0; and padding: 0; to remove browser default settings
+
+CSS Vertical Navigation Bar
+CSS Horizontal Navigation Bar
+
+
+CSS Dropdowns
+
+Basic Dropdown
+
+Create a dropdown box that appears when the user moves the mouse over an element.
+
+CSS Image Gallery
+
+The example above applies to all <input> elements. If you only want to style a specific input type, you can use attribute selectors:
+CSS Forms
+input[type=text] - will only select text fields
+input[type=password] - will only select password fields
+input[type=number] - will only select number fields
+
+CSS Counters
+
+CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). 
+Counters let you adjust the appearance of content based on its placement in the document.
+
+Automatic Numbering With Counters
+CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).
+
+To work with CSS counters we will use the following properties:
+
+counter-reset - Creates or resets a counter
+counter-increment - Increments a counter value
+content - Inserts generated content
+counter() or counters() function - Adds the value of a counter to an element
+To use a CSS counter, it must first be created with counter-reset.
+
+<body>
+    <h1>Using CSS Counters</h1>
+
+    <h2>HTML Tutorial</h2>
+    <h2>CSS Tutorial</h2>
+    <h2>JavaScript Tutorial</h2>
+    <h2>Python Tutorial</h2>
+    <h2>SQL Tutorial</h2>
+</body>
+
+
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+
+
+ CSS Counter Properties
+Property	Description
+content	Used with the ::before and ::after pseudo-elements, to insert generated content
+counter-increment	Increments one or more counter values
+counter-reset	Creates or resets one or more counters
+counter()	Returns the current value of the named counter
+
+CSS Website Layout
+Website Layout
+A website is often divided into headers, menus, content and a footer:
+
+CSS Units
+values higher than the
+
+p {
+  font-size: 25px;
+  line-height: 50px;
+}
+Note:- 🚨
+Note: A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+
+For some CSS properties, negative lengths are allowed.
+
+There are two types of length units: absolute and relative.
+
+Absolute Lengths
+The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+
+Absolute length units are not recommended for use on screen, because screen sizes vary so much. 
+However, they can be used if the output medium is known, such as for print layout.
+
+Unit	Description
+cm	centimeters
+mm	millimeters
+in	inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	points (1pt = 1/72 of 1in)
+pc	picas (1pc = 12 pt)
+
+Relative Lengths
+Relative length units specify a length relative to another length property. Relative length units scale better between different rendering mediums.
+
+Unit	Description	
+em	Relative to the font-size of the element (2em means 2 times the size of the current font)	
+ex	Relative to the x-height of the current font (rarely used)	
+ch	Relative to width of the "0" (zero)	
+rem	Relative to font-size of the root element	
+vw	Relative to 1% of the width of the viewport*	
+vh	Relative to 1% of the height of the viewport*	
+vmin	Relative to 1% of viewport's* smaller dimension	
+vmax	Relative to 1% of viewport's* larger dimension	
+%	Relative to the parent element
+
+
+Note:- 🚨
+vh unit
+full-height-vh height:100vh it take automatically window 100%
+full-height-parent height:100% it take height from it's pareant
+this is the major diffrecne between vh and percent
+ <div class="container">
+        <div class="full-height-vh">100vh</div>
+        <div class="full-height-parent">100%</div>
+    </div>
+
+.container {
+  height: 200px;
+  background-color: lightgray;
+}
+
+.full-height-vh {
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.full-height-parent {
+  height: 100%;
+  background-color: lightgreen;
+}
+
+CSS Specificity
+
+What is Specificity?
+If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", 
+and its style declaration will be applied to that HTML element.
+
+Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.
+
+Specificity Hierarchy
+Every CSS selector has its place in the specificity hierarchy.
+
+There are four categories which define the specificity level of a selector:
+
+Inline styles - Example: <h1 style="color: pink;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, ::before
+
+CSS The !important Rule
+
+What is !important?
+The !important rule in CSS is used to add more importance to a property/value than normal.
+
+In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
+
+
+CSS Math Functions
+The CSS math functions allow mathematical expressions to be used as property values. Here, we will explain the calc(), max() and min() functions.
+
+The calc() Function
+The calc() function performs a calculation to be used as the property value
+
+CSS Syntax
+calc(expression)
+
+Value	Description
+expression	Required. A mathematical expression. The result will be used as the value.
+The following operators can be used: + - * /
+
+ width: calc(100% - 100px);
+it minus the overallwidth 100%-100px that element taking remain width
+
+
+The max() Function
+The max() function uses the largest value, from a comma-separated list of values, as the property value.
+
+CSS Syntax
+max(value1, value2, ...)
+
+Value	Description
+value1, value2, ...	Required. A list of comma-separated values - where the largest value is chose
+
+The min() Function
+The min() function uses the smallest value, from a comma-separated list of values, as the property value.
+Note:- 🚨 it takes maximum width which one is high
+#div1 {
+  background-color: yellow;
+  height: 100px;
+  width: max(50%, 300px);
+}
+
+CSS Syntax
+min(value1, value2, ...)
+
+value1, value2, ...	Required. A list of comma-separated values - where the smallest value is chosen
+Note:- 🚨 it takes minimum width which one is
+#div1 {
+  background-color: yellow;
+  height: 100px;
+  width: min(50%, 300px);
+}
+
+
+All CSS Math Functions
+Function	Description
+calc()	Allows you to perform calculations to determine CSS property values
+max()	Uses the largest value, from a comma-separated list of values, as the property value
+min()	Uses the smallest value, from a comma-separated list of values, as the property value
