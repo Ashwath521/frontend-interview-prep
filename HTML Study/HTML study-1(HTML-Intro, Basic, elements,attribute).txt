@@ -1,0 +1,159 @@
+Note:- 🚨
+Tim Berners-Lee invented HTML
+
+What is HTML?
+HTML stands for Hyper Text Markup Language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+Example Explained
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+
+What is an HTML Element?
+An HTML element is defined by a start tag, some content, and an end tag:
+
+Note: Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+
+
+HTML Basic Examples
+
+The <!DOCTYPE> Declaration
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).
+
+The <!DOCTYPE> declaration is not case sensitive.
+
+HTML Elements
+
+An HTML element is defined by a start tag, some content, and an end tag.
+
+HTML Elements
+The HTML element is everything from the start tag to the end tag:
+
+<tagname>Content goes here...</tagname>
+
+The <!DOCTYPE> declaration for HTML5 is:
+
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading:
+
+HTML Paragraphs
+HTML paragraphs are defined with the <p> tag:
+
+HTML Links
+HTML links are defined with the <a> tag:
+The link's destination is specified in the href attribute. 
+
+Attributes are used to provide additional information about HTML elements.
+
+HTML Images
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+
+HTML Tag Reference
+W3Schools' tag reference contains additional information about these tags and their attributes.
+
+HTML Elements
+An HTML element is defined by a start tag, some content, and an end tag.
+
+<tagname>Content goes here...</tagname>
+The <html> element is the root element and it defines the whole HTML document.
+
+HTML is Not Case Sensitive
+HTML tags are not case sensitive: <P> means the same as <p>.
+
+The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
+At W3Schools we always use lowercase tag names.
+
+Tag	Description
+<html>	Defines the root of an HTML document
+<body>	Defines the document's body
+<h1> to <h6>	Defines HTML headings
+
+HTML Attributes
+
+HTML attributes provide additional information about HTML elements.
+
+HTML Attributes
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+
+The href Attribute
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+The src Attribute
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+
+There are two ways to specify the URL in the src attribute:
+
+1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. 
+If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+
+Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+
+The width and height Attributes
+The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):
+
+The alt Attribute
+The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. 
+This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+
+The style Attribute
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+
+The lang Attribute
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+
+The title Attribute
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+We Suggest: Always Use Lowercase Attributes
+
+Single or Double Quotes?
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+
+Chapter Summary
+All HTML elements can have attributes
+The href attribute of <a> specifies the URL of the page the link goes to
+The src attribute of <img> specifies the path to the image to be displayed
+The width and height attributes of <img> provide size information for images
+The alt attribute of <img> provides an alternate text for an image
+The style attribute is used to add styles to an element, such as color, font, size, and more
+The lang attribute of the <html> tag declares the language of the Web page
+The title attribute defines some extra information about an element
