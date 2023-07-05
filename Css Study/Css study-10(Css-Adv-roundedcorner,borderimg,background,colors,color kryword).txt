@@ -1,0 +1,155 @@
+Note:- 🚨
+CSS Rounded Corners 📝
+
+CSS Rounded Corners
+With the CSS border-radius property, you can give any element "rounded corners".
+
+CSS border-radius - Specify Each Corner
+The border-radius property can have from one to four values. Here are the rules:
+
+Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, 
+third value applies to bottom-right corner, and fourth value applies to bottom-left corner): 
+
+Three values - border-radius: 15px 50px 30px; (first value applies to top-left corner, second value applies to top-right and bottom-left corners, 
+and third value applies to bottom-right corner):
+
+Two values - border-radius: 15px 50px; (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners):
+
+One value - border-radius: 15px; (the value applies to all four corners, which are rounded equally:
+
+CSS Border Images 📝
+
+CSS Border Images
+With the CSS border-image property, you can set an image to be used as the border around an element.
+CSS border-image Property
+The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.
+
+The property has three parts:
+
+The image to use as the border
+Where to slice the image
+Define whether the middle sections should be repeated or stretched
+
+
+CSS Border Image Properties
+Property	Description
+border-image	A shorthand property for setting all the border-image-* properties
+border-image-source	Specifies the path to the image to be used as a border
+border-image-slice	Specifies how to slice the border image
+border-image-width	Specifies the widths of the border image
+border-image-outset	Specifies the amount by which the border image area extends beyond the border box
+border-image-repeat	Specifies whether the border image should be repeated, rounded or stretched
+
+
+CSS Multiple Backgrounds
+
+In this chapter you will learn how to add multiple background images to one element.
+
+You will also learn about the following properties:
+
+background-size
+background-origin
+background-clip
+
+
+CSS Multiple Backgrounds
+CSS allows you to add multiple background images for an element, through the background-image property.
+
+The different background images are separated by commas, and the images are stacked on top of each other, where the first image is closest to the viewer.
+
+The following example has two background images, the first image is a flower (aligned to the bottom and right) and the second image is a paper background (aligned to the top-left corner):
+
+
+CSS Background Size
+The CSS background-size property allows you to specify the size of background images.
+
+The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover.
+
+The two other possible values for background-size are contain and cover.
+
+The contain keyword scales the background image to be as large as possible (but both its width and its height must fit inside the content area).
+ As such, depending on the proportions of the background image and the background positioning area, 
+there may be some areas of the background which are not covered by the background image.
+
+The cover keyword scales the background image so that the content area is completely covered by the
+ background image (both its width and height are equal to or exceed the content area). 
+As such, some parts of the background image may not be visible in the background positioning area.
+
+Define Sizes of Multiple Background Images
+The background-size property also accepts multiple values for background size (using a comma-separated list), when working with multiple backgrounds.
+
+Full Size Background Image
+Now we want to have a background image on a website that covers the entire browser window at all times.
+
+The requirements are as follows:
+
+Fill the entire page with the image (no white space)
+Scale image as needed
+Center image on page
+Do not cause scrollbars
+
+html {
+  background: url(img_man.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+CSS background-origin Property
+
+The CSS background-origin property specifies where the background image is positioned.
+
+The property takes three different values:
+
+border-box - the background image starts from the upper left corner of the border
+padding-box - (default) the background image starts from the upper left corner of the padding edge
+content-box - the background image starts from the upper left corner of the content
+
+CSS background-clip Property
+The CSS background-clip property specifies the painting area of the background.
+
+The property takes three different values:
+
+border-box - (default) the background is painted to the outside edge of the border
+padding-box - the background is painted to the outside edge of the padding
+content-box - the background is painted within the content box
+The following example illustrates the background-clip property:
+
+CSS Advanced Background Properties
+Property	Description
+background	A shorthand property for setting all the background properties in one declaration
+background-clip	Specifies the painting area of the background
+background-image	Specifies one or more background images for an element
+background-origin	Specifies where the background image(s) is/are positioned
+background-size	Specifies the size of the background image(s)
+
+
+
+CSS Colors📝
+
+RGBA Colors
+RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+
+HSL Colors
+HSL stands for Hue, Saturation and Lightness.
+
+Opacity
+The CSS opacity property sets the opacity for the whole element (both background color and text will be opaque/transparent).
+
+CSS Color Keywords
+
+This page will explain the transparent, currentcolor, and inherit keywords.
+The transparent Keyword
+The transparent keyword is used to make a color transparent. This is often used to make a transparent background color for an element.
+
+Note:- 🚨
+Note: The transparent keyword is equivalent to rgba(0,0,0,0). 
+
+The currentcolor Keyword
+The currentcolor keyword is like a variable that holds the current value of the color property of an element.
+Note:- 🚨 border automatically takes the blue color
+div {
+  color: blue;
+  border: 10px solid currentcolor;
+}
+
+The inherit Keyword
+The inherit keyword specifies that a property should inherit its value from its parent element.
