@@ -1,0 +1,266 @@
+Note:- 🚨  📝
+CSS Gradients  📝
+
+CSS gradients let you display smooth transitions between two or more specified colors.
+
+CSS defines three types of gradients:
+
+Linear Gradients (goes down/up/left/right/diagonally)
+Radial Gradients (defined by their center)
+Conic Gradients (rotated around a center point)
+
+CSS Shadow Effects 📝
+
+CSS Shadow Effects
+With CSS you can add shadow to text and to elements.
+
+In these chapters you will learn about the following properties:
+
+text-shadow
+box-shadow
+
+Text shadow effect!
+CSS Text Shadow
+The CSS text-shadow property applies shadow to text.
+Example
+h1 {
+  text-shadow: 0 0 3px #FF0000;
+}
+
+Multiple Shadows
+To add more than one shadow to the text, you can add a comma-separated list of shadows.
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+CSS Box Shadow
+
+CSS box-shadow Property
+The CSS box-shadow property is used to apply one or more shadows to an element.
+
+div {
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+Set the inset Parameter
+The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow.
+
+div {
+  box-shadow: 10px 10px 5px lightblue inset;
+}
+
+Add Multiple Shadows
+
+div {
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}
+
+box-shadow	Adds one or more shadows to an element
+text-shadow	Adds one or more shadows to a text
+
+
+CSS Text Effects 🚨  📝
+
+CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes
+
+In this chapter you will learn about the following properties:
+
+text-overflow
+word-wrap
+word-break
+writing-mode
+
+CSS Text Overflow
+The CSS text-overflow property specifies how overflowed content that is not displayed should be signaled to the user.
+
+CSS Word Wrapping
+The CSS word-wrap property allows long words to be able to be broken and wrap onto the next line. 
+
+p {
+  word-wrap: break-word;
+}
+
+
+CSS Word Breaking
+The CSS word-break property specifies line breaking rules.
+
+CSS Writing Mode
+The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+
+p.test1 {
+  word-break: keep-all;
+}
+
+p.test2 {
+  word-break: break-all;
+}
+
+CSS Writing Mode
+The CSS writing-mode property specifies whether lines of text are laid out horizontally or vertically.
+
+p.test1 {
+  writing-mode: horizontal-tb;
+}
+
+span.test2 {
+  writing-mode: vertical-rl;
+}
+
+p.test2 {
+  writing-mode: vertical-rl;
+}
+
+
+CSS Text Effect Properties
+The following table lists the CSS text effect properties:
+
+Property	Description
+text-justify	Specifies how justified text should be aligned and spaced
+text-overflow	Specifies how overflowed content that is not displayed should be signaled to the user
+word-break	Specifies line breaking rules for non-CJK scripts
+word-wrap	Allows long words to be able to be broken and wrap onto the next line
+writing-mode	Specifies whether lines of text are laid out horizontally or vertically
+
+
+
+CSS 2D Transforms 🚨  📝
+
+CSS 2D Transforms
+CSS transforms allow you to move, rotate, scale, and skew elements.
+
+In this chapter you will learn about the following CSS property:
+transform
+
+CSS 2D Transforms Methods
+With the CSS transform property you can use the following 2D transformation methods:
+
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+The translate() Method
+The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+
+The following example moves the <div> element 50 pixels to the right, and 100 pixels down from its current position:
+div {
+  transform: translate(50px, 100px);
+}
+
+The rotate() Method
+The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.
+div {
+  transform: rotate(20deg);
+}
+Using negative values will rotate the element counter-clockwise.
+
+The scale() Method
+The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).
+The following example increases the <div> element to be two times of its original width, and three times of its original height: 
+div {
+  transform: scale(2, 3);
+}
+
+The scaleX() Method
+The scaleX() method increases or decreases the width of an element.
+
+The following example increases the <div> element to be two times of its original width: 
+div {
+  transform: scaleX(2);
+}
+
+The scaleY() Method
+The scaleY() method increases or decreases the height of an element.
+
+div {
+  transform: scaleY(3);
+}
+
+The skewX() Method
+The skewX() method skews an element along the X-axis by the given angle.
+Note:🚨 It give the rotation only for x-axis
+div {
+  transform: skewX(20deg);
+}
+
+The skewY() Method
+The skewY() method skews an element along the Y-axis by the given angle.
+div {
+  transform: skewY(20deg);
+}
+
+The skew() Method
+The skew() method skews an element along the X and Y-axis by the given angles.
+
+The matrix() method combines all the 2D transform methods into one.
+
+The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.
+
+CSS Transform Properties
+The following table lists all the 2D transform properties:
+
+Property	Description
+transform	Applies a 2D or 3D transformation to an element
+transform-origin	Allows you to change the position on transformed elements
+
+CSS 2D Transform Methods
+Function	Description
+matrix(n,n,n,n,n,n)	Defines a 2D transformation, using a matrix of six values
+translate(x,y)	Defines a 2D translation, moving the element along the X- and the Y-axis
+translateX(n)	Defines a 2D translation, moving the element along the X-axis
+translateY(n)	Defines a 2D translation, moving the element along the Y-axis
+scale(x,y)	Defines a 2D scale transformation, changing the elements width and height
+scaleX(n)	Defines a 2D scale transformation, changing the element's width
+scaleY(n)	Defines a 2D scale transformation, changing the element's height
+rotate(angle)	Defines a 2D rotation, the angle is specified in the parameter
+skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis
+skewX(angle)	Defines a 2D skew transformation along the X-axis
+skewY(angle)	Defines a 2D skew transformation along the Y-axis
+
+CSS 3D Transforms
+
+CSS 3D Transforms Methods
+With the CSS transform property you can use the following 3D transformation methods:
+
+rotateX()
+rotateY()
+rotateZ()
+
+The rotateX() method rotates an element around its X-axis at a given degree:
+
+The rotateY() method rotates an element around its Y-axis at a given degree:
+
+he rotateZ() method rotates an element around its Z-axis at a given degree:
+
+
+transform	Applies a 2D or 3D transformation to an element
+transform-origin	Allows you to change the position on transformed elements
+transform-style	Specifies how nested elements are rendered in 3D space
+perspective	Specifies the perspective on how 3D elements are viewed
+perspective-origin	Specifies the bottom position of 3D elements
+backface-visibility	Defines whether or not an element should be visible when not facing the screen
+
+CSS 3D Transform Methods
+Function	Description
+matrix3d
+(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	Defines a 3D transformation, using a 4x4 matrix of 16 values
+translate3d(x,y,z)	Defines a 3D translation
+translateX(x)	Defines a 3D translation, using only the value for the X-axis
+translateY(y)	Defines a 3D translation, using only the value for the Y-axis
+translateZ(z)	Defines a 3D translation, using only the value for the Z-axis
+scale3d(x,y,z)	Defines a 3D scale transformation
+scaleX(x)	Defines a 3D scale transformation by giving a value for the X-axis
+scaleY(y)	Defines a 3D scale transformation by giving a value for the Y-axis
+scaleZ(z)	Defines a 3D scale transformation by giving a value for the Z-axis
+rotate3d(x,y,z,angle)	Defines a 3D rotation
+rotateX(angle)	Defines a 3D rotation along the X-axis
+rotateY(angle)	Defines a 3D rotation along the Y-axis
+rotateZ(angle)	Defines a 3D rotation along the Z-axis
+perspective(n)	Defines a perspective view for a 3D transformed element
