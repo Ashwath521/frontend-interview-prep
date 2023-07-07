@@ -1,0 +1,300 @@
+Note:- 🚨  📝
+
+CSS Styling Images  📝
+
+Rounded Images
+Use the border-radius property to create rounded images:
+
+img {
+  border-radius: 50%;
+}
+
+
+Thumbnail Images
+Use the border property to create thumbnail images.
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+Responsive Images
+Responsive images will automatically adjust to fit the size of the screen.
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+Center an Image
+To center an image, set left and right margin to auto and make it into a block element:
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+Transparent Image
+The opacity property can take a value from 0.0 - 1.0. The lower value, the more transparent:
+
+Image Text
+
+Image Text
+How to position text in an image:
+p {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+
+Image Filters
+The CSS filter property adds visual effects (like blur and saturation) to an element.
+
+
+.blur {filter: blur(4px);}
+.brightness {filter: brightness(250%);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
+
+
+Image Hover Overlay
+
+.div1 > .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: 300px;
+  background-color: tomato;
+  margin-top: 10px;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.div1 > .overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.div1 > .overlay > .text {
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+CSS Image Reflection  📝 🚨
+
+CSS Image Reflections
+The box-reflect property is used to create an image reflection.
+
+The value of the box-reflect property can be: below, above, left , or right.
+
+xample
+Here we want the reflection below the image:
+
+img {
+  -webkit-box-reflect: below;
+}
+
+CSS Reflection Offset
+To specify the gap between the image and the reflection, add the size of the gap to the box-reflect property.
+
+CSS The object-fit Property 📝 🚨
+
+The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+
+The CSS object-fit Property
+The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+
+This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".
+
+Using object-fit: contain;
+If we use object-fit: contain; the image keeps its aspect ratio, but is resized to fit within the given dimension:
+
+Using object-fit: fill;
+If we use object-fit: fill; the image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit:
+
+Using object-fit: none;
+If we use object-fit: none; the image is not resized:
+Using object-fit: scale-down;
+If we use object-fit: scale-down; the image is scaled down to the smallest version of none or contain:
+
+CSS Object-* Properties
+The following table lists the CSS object-* properties:
+
+Property	Description
+object-fit	Specifies how an <img> or <video> should be resized to fit its container
+object-position	Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box".
+
+CSS The object-position Property 📝 🚨
+
+The CSS object-position property is used to specify how an <img> or <video> should be positioned within its container.
+
+Using the object-position Property
+Let's say that the part of the image that is shown, is not positioned as we want. To position the image, we will use the object-position property.
+
+CSS Object-* Properties
+The following table lists the CSS object-* properties:
+
+Property	Description
+object-fit	Specifies how an <img> or <video> should be resized to fit its container
+object-position	Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box"
+
+CSS Masking
+With CSS masking you create a mask layer to place over an element to partially or fully hide portions of the element.
+
+The CSS mask-image Property
+The CSS mask-image property specifies a mask layer image.
+The mask-image property specifies the image to be used as a mask layer for an element.
+
+Use Gradients as the Mask Layer
+CSS linear and radial gradients can also be used as mask images.
+
+Example
+Use a radial gradient as a mask layer (a circle):
+
+.mask2 {
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+
+CSS Masking Properties
+The following table lists all the CSS masking properties:
+
+Property	Description
+mask-image	Specifies an image to be used as a mask layer for an element
+mask-mode	Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-origin	Specifies the origin position (the mask position area) of a mask layer image
+mask-position	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-repeat	Specifies how the mask layer image is repeated
+mask-size	Specifies the size of a mask layer image
+
+CSS Masking Properties
+The following table lists all the CSS masking properties:
+
+Property	Description
+mask-image	Specifies an image to be used as a mask layer for an element
+mask-mode	Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-origin	Specifies the origin position (the mask position area) of a mask layer image
+mask-position	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-repeat	Specifies how the mask layer image is repeated
+mask-size	Specifies the size of a mask layer image
+
+CSS Buttons 📝 🚨
+
+Learn how to style buttons using CSS.
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+CSS Pagination 📝 🚨
+Active and Hoverable Pagination
+
+    <div class="div1">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+
+    </div>
+
+.div1 > a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.div1 > a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+CSS Multiple Columns
+CSS Multi-column Layout
+The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers:
+
+CSS Multi-column Properties
+In this chapter you will learn about the following multi-column properties:
+
+column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width
+
+CSS Specify the Gap Between Columns
+The column-gap property specifies the gap between the columns.
+div {
+  column-gap: 40px;
+}
+CSS Column Rules
+The column-rule-style property specifies the style of the rule between columns:
+div {
+  column-rule-style: solid;
+}
+
+The column-rule-color property specifies the color of the rule between columns:
+
+div {
+  column-rule-color: lightblue;
+}
+
+Specify How Many Columns an Element Should Span
+The column-span property specifies how many columns an element should span across.
+Specify The Column Width
+The column-width property specifies a suggested, optimal width for the columns.
+
+
+CSS Multi-columns Properties
+The following table lists all the multi-columns properties: 
+
+Property	Description
+column-count	Specifies the number of columns an element should be divided into
+column-fill	Specifies how to fill columns
+column-gap	Specifies the gap between the columns
+column-rule	A shorthand property for setting all the column-rule-* properties
+column-rule-color	Specifies the color of the rule between columns
+column-rule-style	Specifies the style of the rule between columns
+column-rule-width	Specifies the width of the rule between columns
+column-span	Specifies how many columns an element should span across
+column-width	Specifies a suggested, optimal width for the columns
+columns	A shorthand property for setting column-width and column-count
