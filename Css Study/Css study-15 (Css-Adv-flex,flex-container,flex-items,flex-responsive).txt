@@ -1,0 +1,134 @@
+Note:- 🚨  📝
+CSS Flexbox 🚨  📝
+CSS Flexbox Layout Module
+Before the Flexbox Layout module, there were four layout modes:
+
+Block, for sections in a webpage
+Inline, for text
+Table, for two-dimensional table data
+Positioned, for explicit position of an element
+
+CSS Flex Container 🚨  📝
+The flex container becomes flexible by setting the display property to flex
+
+.flex-container {
+  display: flex;
+}
+
+The flex container properties are:
+
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+The flex-direction Property
+The flex-direction property defines in which direction the container wants to stack the flex items.
+The column value stacks the flex items vertically (from top to bottom):
+The row value stacks the flex items horizontally (from left to right):
+.flex-container {
+  display: flex;
+  flex-direction: column;
+ flex-direction: column-reverse;
+flex-direction: row;
+flex-direction: row-reverse;
+}
+
+The flex-wrap Property
+The flex-wrap property specifies whether the flex items should wrap or not.
+flex-wrap: wrap;
+flex-wrap: nowrap;
+flex-wrap: wrap-reverse;
+The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order:
+
+The flex-flow Property
+The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+
+.flex-container {
+  display: flex;justify-contentjustify-content
+  flex-flow: row wrap;
+}
+
+The justify-content Property
+The justify-content property is used to align the flex items inside the container
+
+synatx: this is used for horizontal align
+justify-content:flex-start|flex-end|center|space-between|space-evenly|space-around
+
+The align-items Property
+The align-items property is used to align the flex items inside the container.
+
+syntax:this is used for vertical align
+align-items:flex-start|center|flex-end|baseline
+
+The align-content Property
+The align-content property is used to align the flex lines.
+
+Note:- 🚨
+align-conetnt property only used for only for flex lines but use case when multiple flex row is there
+it works for verticall way
+
+syntax:
+align-content:flex-start|flex-end|center|space-between|space-evenly|space-around
+
+Perfect Centering
+In the following example we will solve a very common style problem: perfect centering.
+
+.flex-container {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+The CSS Flexbox Container Properties
+The following table lists all the CSS Flexbox Container properties:
+
+Property	Description
+align-content	Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+align-items	Vertically aligns the flex items when the items do not use all available space on the cross-axis
+display	Specifies the type of box used for an HTML element
+flex-direction	Specifies the direction of the flexible items inside a flex container
+flex-flow	A shorthand property for flex-direction and flex-wrap
+flex-wrap	Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+justify-content	Horizontally aligns the flex items when the items do not use all available space on the main-axis
+
+
+CSS Flex Items 🚨  📝
+
+Child Elements (Items)
+The direct child elements of a flex container automatically becomes flexible (flex) items.
+
+The flex item properties are:
+
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+
+The order Property
+The order property specifies the order of the flex items.
+
+The flex-grow Property
+The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.
+
+The flex-shrink Property
+The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.
+
+The flex-basis Property
+The flex-basis property specifies the initial length of a flex item.
+
+The flex Property
+The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.
+
+The align-self Property
+The align-self property specifies the alignment for the selected item inside the flexible container.
+
+The align-self property overrides the default alignment set by the container's align-items property
+Note :- 🚨
+align-self work for the veticall flow for indidual element
