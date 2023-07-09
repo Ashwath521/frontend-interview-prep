@@ -1,0 +1,124 @@
+Note:- 🚨  📝
+
+CSS User Interface
+
+CSS User Interface
+In this chapter you will learn about the following CSS user interface properties:
+
+resize
+outline-offset
+
+CSS Resizing
+The resize property specifies if (and how) an element should be resizable by the user.
+
+div {
+  resize: horizontal;
+  overflow: auto;
+}
+
+div {
+  resize: vertical;
+  overflow: auto;
+}
+
+div {
+  resize: both;
+  overflow: auto;
+}
+In many browsers, <textarea> is resizable by default. Here, we have used the resize property to disable the resizability:
+
+CSS Outline Offset
+The outline-offset property adds space between an outline and the edge or border of an element.
+
+CSS User Interface Properties
+The following table lists all the user interface properties:
+
+Property	Description
+outline-offset	Adds space between an outline and the edge or border of an element
+resize	Specifies whether or not an element is resizable by the user
+
+CSS Variables - The var() Function
+
+
+CSS Variables 🚨  📝
+The var() function is used to insert the value of a CSS variable.
+
+CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, 
+and change the variables based on media queries.
+
+A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.
+
+Syntax of the var() Function
+The var() function is used to insert the value of a CSS variable.
+
+The syntax of the var() function is as follows:
+
+var(--name, value)
+Value	Description
+name	Required. The variable name (must start with two dashes)
+value	Optional. The fallback value (used if the variable is not found)
+
+Note: The variable name must begin with two dashes (--) and it is case sensitive!
+
+How var() Works
+First of all: CSS variables can have a global or local scope.
+
+Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared.
+
+To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.
+
+To create a variable with local scope, declare it inside the selector that is going to use it.
+
+The following example is equal to the example above, but here we use the var() function.
+
+First, we declare two global variables (--blue and --white). Then, we use the var() function to insert the value of the variables later in the style sheet:
+
+CSS var() Function
+Property	Description
+var()	Inserts the value of a CSS variable
+
+CSS Box Sizing 🚨  📝
+
+CSS Box Sizing
+The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+
+Without the CSS box-sizing Property
+By default, the width and height of an element is calculated like this:
+
+width + padding + border = actual width of an element
+height + padding + border = actual height of an element
+
+This means: When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).
+
+The following illustration shows two <div> elements with the same specified width and height:
+
+With the CSS box-sizing Property
+The box-sizing property allows us to include the padding and border in an element's total width and height.
+
+If you set box-sizing: border-box; on an element, padding and border are included in the width and height:
+
+CSS Box Sizing Property
+Property	Description
+box-sizing	Defines how the width and height of an element are calculated: should they include padding and borders, or not
+
+CSS Media Queries
+
+CSS2 Introduced Media Types
+The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+
+CSS3 Introduced Media Queries
+Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+
+Media queries can be used to check many things, such as:
+
+width and height of the viewport
+width and height of the device
+orientation (is the tablet/phone in landscape or portrait mode?)
+resolution
+
+CSS3 Media Types
+Value	Description
+all	Used for all media type devices
+print	Used for printers
+screen	Used for computer screens, tablets, smart-phones etc.
+speech	Used for screenreaders that "reads" the page out loud
