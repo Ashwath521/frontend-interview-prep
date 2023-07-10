@@ -1,0 +1,244 @@
+Note:- 🚨
+HTML Headings📄
+
+HTML headings are titles or subtitles that you want to display on a webpage.
+
+HTML Headings
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+Headings Are Important
+Search engines use the headings to index the structure and content of your web pages.
+
+Users often skim a page by its headings. It is important to use headings to show the document structure.
+
+<h1> headings should be used for main headings, followed by <h2> headings, then the less important <h3>, and so on.
+
+
+HTML Paragraphs📄 Note:- 🚨
+
+A paragraph always starts on a new line, and is usually a block of text.
+
+HTML Paragraphs
+The HTML <p> element defines a paragraph.
+
+A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+
+HTML Horizontal Rules
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+The <hr> tag is an empty tag, which means that it has no end tag.
+
+HTML Line Breaks
+The HTML <br> element defines a line break.
+
+Use <br> if you want a line break (a new line) without starting a new paragraph:
+The <br> tag is an empty tag, which means that it has no end tag.
+
+The HTML <pre> Element
+The HTML <pre> element defines preformatted text.
+
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+
+Tag	Description
+<p>	Defines a paragraph
+<hr>	Defines a thematic change in the content
+<br>	Inserts a single line break
+<pre>	Defines pre-formatted text
+
+HTML Styles 📄 Note:- 🚨
+The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+
+The HTML Style Attribute
+Setting the style of an HTML element, can be done with the style attribute.
+
+The HTML style attribute has the following syntax:
+<tagname style="property:value;">
+
+The property is a CSS property. The value is a CSS value.
+
+Chapter Summary
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+
+HTML Text Formatting 📄 Note:- 🚨
+
+HTML contains several elements for defining text with a special meaning.
+
+HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+HTML <b> and <strong> Elements
+The HTML <b> element defines bold text, without any extra importance.
+The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
+
+HTML <i> and <em> Elements
+The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+
+Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+
+HTML <small> Element
+The HTML <small> element defines smaller text:
+
+HTML <mark> Element
+The HTML <mark> element defines text that should be marked or highlighted:
+
+HTML <del> Element
+The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:
+
+HTML <ins> Element
+The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:
+
+HTML <sub> Element
+The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
+ Subscript text can be used for chemical formulas, like H2O:
+
+HTML <sup> Element
+The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. 
+Superscript text can be used for footnotes, like WWW[1]:
+
+HTML Text Formatting Elements
+Tag	Description
+<b>	Defines bold text
+<em>	Defines emphasized text 
+<i>	Defines a part of text in an alternate voice or mood
+<small>	Defines smaller text
+<strong>	Defines important text
+<sub>	Defines subscripted text
+<sup>	Defines superscripted text
+<ins>	Defines inserted text
+<del>	Defines deleted text
+<mark>	Defines marked/highlighted text
+
+HTML Comments 📄 Note:- 🚨
+
+HTML comments are not displayed in the browser, but they can help document your HTML source code.
+
+HTML Comment Tag
+You can add comments to your HTML source by using the following syntax:
+
+<!-- Write your comments here -->
+Notice that there is an exclamation point (!) in the start tag, but not in the end tag.
+
+Note: Comments are not displayed by the browser, but they can help document your HTML source code.
+
+Add Comments
+With comments you can place notifications and reminders in your HTML code:
+
+Example
+<!-- This is a comment -->
+
+<p>This is a paragraph.</p>
+
+<!-- Remember to add more information here -->
+
+HTML Colors📄
+HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+
+HTML Quotation and Citation Elements📄
+
+In this chapter we will go through the <blockquote>,<q>, <abbr>, <address>, <cite>, and <bdo> HTML elements.
+
+HTML <q> for Short Quotations
+The HTML <q> tag defines a short quotation.
+
+HTML <abbr> for Abbreviations
+The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+
+HTML <address> for Contact Information
+The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+HTML <cite> for Work Title
+The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+
+Note: A person's name is not the title of a work.
+
+HTML <bdo> for Bi-Directional Override
+BDO stands for Bi-Directional Override.
+
+The HTML <bdo> tag is used to override the current text direction:
+
+HTML Styles - CSS📄 
+CSS stands for Cascading Style Sheets.
+
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+What is CSS?
+Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out,
+ what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+
+Using CSS
+CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+
+Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.
+
+Internal CSS
+An internal CSS is used to define a style for a single HTML page.
+
+An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+
+External CSS
+An external style sheet is used to define the style for many HTML pages.
+
+To use an external style sheet, add a link to it in the <head> section of each HTML page:
+
+Chapter Summary
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+
+HTML Page Title 📄 
+
+Every web page should have a page title to describe the meaning of the page.
+
+The <title> element adds a title to your page:
+
+The title should describe the content and the meaning of the page.
+
+The page title is very important for search engine optimization (SEO). The text is used by search engine algorithms to decide the order when listing pages in search results.
+
+The <title> element:
+
+defines a title in the browser toolbar
+provides a title for the page when it is added to favorites
+displays a title for the page in search engine-results
+
+HTML Title Tag
+Tag	Description
+<title>	Defines the title of the document

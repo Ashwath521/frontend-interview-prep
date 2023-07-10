@@ -1,0 +1,329 @@
+Note:- 🚨 📄
+
+HTML Links
+HTML Links - Hyperlinks
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+HTML Links - Syntax
+The HTML <a> tag defines a hyperlink. It has the following syntax:
+
+<a href="url">link text</a>
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+The link text is the part that will be visible to the reader.
+
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+
+HTML Links - The target Attribute
+By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+Note:- 🚨
+HTML Links - Use an Image as a Link
+To use an image as a link, just put the <img> tag inside the <a> tag:
+
+Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+
+<a href="mailto:someone@example.com">Send email</a>
+
+Button as a Link
+To use an HTML button as a link, you have to add some JavaScript code.
+
+JavaScript allows you to specify what happens at certain events, such as a click of a button:
+
+Example
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+More on Absolute URLs and Relative URLs
+Example
+Use a full URL to link to a web page: 
+
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+Example
+Link to a page located in the html folder on the current web site: 
+
+<a href="/html/default.asp">HTML tutorial</a>
+
+Example
+Link to a page located in the same folder as the current page: 
+
+<a href="default.asp">HTML tutorial</a>
+
+Chapter Summary
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+
+HTML Link Tags
+Tag	Description
+<a>	Defines a hyperlink
+
+HTML Links - Different Colors
+
+An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.
+
+HTML Link Colors
+By default, a link will appear like this (in all browsers):
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+You can change the link state colors, by using CSS:
+
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+HTML Links - Create Bookmarks
+
+Create a Bookmark in HTML
+Bookmarks can be useful if a web page is very long.
+
+To create a bookmark - first create the bookmark, then add a link to it.
+
+When the link is clicked, the page will scroll down or up to the location with the bookmark.
+ <a href="./ind.html" target="_blank">
+        Send email
+    </a>
+
+Example
+First, use the id attribute to create a bookmark:
+
+
+Chapter Summary
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+
+HTML Images
+Images can improve the design and the appearance of a web page.
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
+HTML Images Syntax
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+Syntax
+<img src="url" alt="alternatetext">
+
+The src Attribute
+The required src attribute specifies the path (URL) to the image.
+
+Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. 
+Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. 
+The broken link icon and the alt text are shown if the browser cannot find the image.
+
+The alt Attribute
+The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+The value of the alt attribute should describe the image:
+If a browser cannot find an image, it will display the value of the alt attribute:
+
+Image Size - Width and Height
+You can use the style attribute to specify the width and height of an image.
+
+Images in Another Folder
+If you have your images in a sub-folder, you must include the folder name in the src attribute:
+
+Images on Another Server/Website
+Some web sites point to an image on another server.
+
+To point to an image on another server, you must specify an absolute (full) URL in the src attribute:
+
+Notes on external images: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws.
+ In addition, you cannot control external images; they can suddenly be removed or changed.
+
+Image as a Link
+To use an image as a link, put the <img> tag inside the <a> tag:
+
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+Common Image Formats
+Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):
+
+Abbreviation	File Format	File Extension
+APNG	Animated Portable Network Graphics	.apng
+GIF	Graphics Interchange Format	.gif
+ICO	Microsoft Icon	.ico, .cur
+JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	Portable Network Graphics	.png
+SVG	Scalable Vector Graphics	.svg
+
+Chapter Summary
+Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right
+
+HTML Image Maps
+
+With HTML image maps, you can create clickable areas on an image.
+
+Image Maps
+The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+
+Try to click on the computer, phone, or the cup of coffee in the image below:
+
+  <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/w3images/mac.jpg">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/w3images/cellphone.jpg">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee"
+            href="https://www.w3schools.com/w3images/coffeehouse2.jpg">
+    </map>
+
+How Does it Work?
+The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+
+To create an image map you need an image, and some HTML code that describes the clickable areas.
+
+The Image
+The image is inserted using the <img> tag. The only difference from other images is that you must add a usemap attribute:
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+
+Create Image Map
+Then, add a <map> element.
+
+The <map> element is used to create an image map, and is linked to the image by using the required name attribute:
+
+<map name="workmap">
+
+The name attribute must have the same value as the <img>'s usemap attribute .
+
+Shape
+You must define the shape of the clickable area, and you can choose one of these values:
+
+rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region
+You must also define some coordinates to be able to place the clickable area onto the image. 
+
+Chapter Summary
+Use the HTML <map> element to define an image map
+Use the HTML <area> element to define the clickable areas in the image map
+Use the HTML usemap attribute of the <img> element to point to an image map
+
+HTML Image Tags
+Tag	Description
+<img>	Defines an image
+<map>	Defines an image map
+<area>	Defines a clickable area inside an image map
+<picture>	Defines a container for multiple image resources
+
+HTML Background Images
+
+The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+
+The HTML <picture> Element
+The HTML <picture> element gives web developers more flexibility in specifying image resources.
+
+The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. 
+This way the browser can choose the image that best fits the current view and/or device.
+
+Each <source> element has a media attribute that defines when the image is the most suitable.
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+Note: Always specify an <img> element as the last child element of the <picture> element. 
+The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+
+When to use the Picture Element
+There are two main purposes for the <picture> element:
+
+1. Bandwidth
+If you have a small screen or device, it is not necessary to load a large image file. 
+The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+
+2. Format Support
+Some browsers or devices may not support all image formats. By using the <picture> element, 
+you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+
+HTML Image Tags
+Tag	Description
+<img>	Defines an image
+<map>	Defines an image map
+<area>	Defines a clickable area inside an image map
+<picture>	Defines a container for multiple image resources
+
+HTML Page Title
+
+Every web page should have a page title to describe the meaning of the page.
+
+HTML Title Tag
+Tag	Description
+<title>	Defines the title of the document
+
+The title should describe the content and the meaning of the page.
+
+Note:- 🚨
+
+The page title is very important for search engine optimization (SEO). 
+The text is used by search engine algorithms to decide the order when listing pages in search results.
+
+The <title> element:
+
+defines a title in the browser toolbar
+provides a title for the page when it is added to favorites
+displays a title for the page in search engine-results
